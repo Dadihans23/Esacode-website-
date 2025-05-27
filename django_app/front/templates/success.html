@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}Connexion réussie{% endblock %}
+
+{% block content %}
+<section class="pt-[124px] pb-20 bg-cover bg-center relative" style="background-image: url('{% static '/assets/images/land_bg_four.jpg' %}')">
+    <div class="absolute inset-0 bg-no-repeat bg-center bg-cover" style="background-image: url('{% static '/assets/images/hero-4-bg.png' %}')"></div>
+
+        <div class="container relative">
+            <div class="grid grid-cols-1">
+                <div class="max-w-[700px] text-center mx-auto w-full bg-white border-[10px] border-custom/10 py-[50px] px-10">
+                    <p class="uppercase tracking-[4px]"><span class="h-[2px] -top-[5px] relative bg-custom w-10 mx-1 inline-block"></span> Esacode <span class="h-[2px] -top-[5px] relative bg-custom w-10 mx-1 inline-block"></span></p>
+                    {% if request.user.is_authenticated %}
+                        <h1 class="font-bold text-2xl md:text-[24px] mt-4 leading-[1.4]">
+                            Content de vous revoir, {{ request.user.username }} !
+                        </h1>
+                        <p class="text-muted mt-6">
+                            Nous vous invitons à consulter votre profil et mettre à jour vos informations 
+                            via le dashboard pour profiter pleinement de nos services.
+                        </p>
+
+                        <form action="{% url 'backend:logout_user' %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" class="btn-custom mt-4">Déconnexion</button>
+                        </form>
+                        
+                    {% endif %}
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

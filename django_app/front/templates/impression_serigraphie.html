@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block title %}Impression et Serigraphie - Services Esacode{% endblock %}
+{% block header %}Services - Esacode | Services numériques sur mesure pour entreprises et particuliers{% endblock %}
+
+{% block meta_description %}
+Votre communication digitale rentable pour entreprise avec Esacode : stratégie sur-mesure, web, mobile, design, ERP Odoo et solutions innovantes.
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+<!-- Start Infographie & Sérigraphie Section -->
+<section class="py-20 bg-white">
+    <div class="container">
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-10">
+            <div>
+                <div>
+                    <img src="{% static '/assets/images/esacode-logo.png' %}" alt="Logo Esacode" class="mx-auto img-fluid d-block" style="width: 50%;">
+                </div>
+            </div>
+            <div class="justified-text">
+                <h3 class="font-bold text-[26px] mb-4">Infographie & Sérigraphie : l’impact au format physique</h3>
+                <p class="text-muted mb-4">
+                    Même à l’ère du numérique, l’<strong>impression physique</strong> reste un vecteur puissant de communication pour renforcer votre visibilité.
+                </p>
+                <p class="text-muted mb-4">
+                    Chez <span class="text-custom">Esacode</span> , nous réalisons vos supports imprimés avec un design professionnel et un rendu de qualité pour marquer les esprits.
+                </p>
+                <p class="text-muted">
+                    Une <strong>stratégie omnicanale</strong> passe aussi par le papier. Complétez votre communication digitale avec des impressions efficaces et percutantes.
+                </p>
+            </div>
+        </div>
+
+        <div class="justified-text mt-10 px-10">
+            <!-- Points clés -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4">
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Flyers événementiels" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Création et impression de flyers pour vos événements</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Cartes de visite" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Conception de cartes de visite professionnelles</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Goodies personnalisés" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Personnalisation de goodies pour promouvoir votre marque</span>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-10 text-center">
+                <a href="{% url 'front:contact' %}" class="inline-block bg-custom text-white font-semibold px-8 py-3 rounded-[8px] shadow hover:bg-opacity-90 transition">
+                    Parlez-nous de vos supports imprimés
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+{% include 'includes/portfolio.html' %}
+
+{% include 'includes/cta_contact.html' %}
+{% endblock %}

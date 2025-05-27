@@ -1,0 +1,21 @@
+{% load static %} 
+
+<!-- Start Contact -->
+<section class="py-20  relative bg-cover" style="background-image: url('{% static '/assets/bg/contact.jpg' %}')">
+    <div class="absolute inset-0 w-full h-full bg-dark/50"></div>
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <div class="bg-white md:py-20 md:px-[60px] px-5 py-[60px] relative max-w-[600px] md:ml-0 mx-auto rounded">
+                <div class="text-center">
+                    <h2 class="font-bold text-[32px] md:text-[40px] capitalize mb-2 relative z-10"><span class="bg-[#dff1f0] h-[70px] w-[70px] inline-block absolute rounded-full -z-10 -top-[15px]"></span>Assistance Personnalisée?</h2>
+                    <p class="mx-auto text-lg max-w-[600px] mt-6">Nous sommes à votre entière disposition pour répondre à vos interrogations et vous offrir un service sur mesure.</p>
+                    <div class="pt-12">
+                        <a class="w-3/4 btn-custom" href='{% url "front:contact" %}'>Prendre contact</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact -->

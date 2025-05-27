@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}À propos d'Esacode{% endblock %}
+{% block header %}À propos d'Esacode{% endblock %}
+
+{% block content %}
+    <!-- Début bannière -->
+    <section class="md:pt-[170px] pt-[120px] pb-20 md:pb-[90px] bg-cover relative" style="background-image: url('{% static '/assets/images/bg-pages.jpg' %}')">
+        <div class="container">
+            <div class="grid grid-cols-1">
+                <h1 class="font-bold text-[36px]">À propos d'Esacode</h1>
+                <p class="mt-2">Entreprise spécialisée dans le développement de solutions informatique</p>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Fin bannière -->
+     <!-- Start About Section -->
+     <section class="py-20 bg-white">
+        <div class="container">
+            <div class="grid grid-cols-1">
+                <div>
+                    <img src="{% static assets/images/about_page_img.jpg }" class="rounded-[30px] mx-auto block" alt="">
+                </div>
+                
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2  gap-[30px]">
+                <div>
+                    <div>
+                        <img src="{% static '/assets/images/esacode-logo.png' %}" alt="" class="mx-auto img-fluid d-block" style="width: 50%;">
+                    </div>
+                    
+                </div>
+                <div class="justified-text">
+                    <p class="text-muted mb-4">Esacode, votre partenaire incontournable dans la transformation numérique, propose une gamme complète de services pour accompagner aussi bien les entreprises que les particuliers. Nous offrons des solutions sophistiquées qui révolutionnent votre approche de la communication vocale, simplifiant ainsi vos processus grâce à notre plateforme intuitive.</p>
+                    <p class="text-muted">Nos services comprennent la détection de la langue, la traduction, la conversion de texte en audio, et  le clonage de voix, vous permettant ainsi d'accéder à des fonctionnalités avancées pour répondre à vos besoins spécifiques. Avec une disponibilité dans plus de 40 langues, 
+                        <strong class="text-custom">
+                            le fon , le wollof , le lingala , le baoulé ,  haoussa, le yoruba, le igbo, le français, l'anglais, le chinois, le japonais, le russe, l'espagnol, l'allemand, l'arabe, le portugais et bien d'autres, notre plateforme offre une palette linguistique riche et diversifiée.
+                         </strong> 
+                     </p>
+                </div>
+            </div>
+            <div class="justified-text mt-4">
+                <p class="text-muted mb-4">En plus de nos services de communication vocale, nous accompagnons également nos clients dans leur processus global de digitalisation, en proposant des solutions sur mesure pour optimiser leur activité et renforcer leur compétitivité sur le marché. Nous offrons des services de développement web et mobile de haute qualité pour créer des applications et des sites web performants et intuitifs. Notre expertise en design nous permet de concevoir des interfaces utilisateur attrayantes et ergonomiques, tandis que notre gestion de réseaux sociaux (community management) assure une présence en ligne dynamique et engageante.</p>
+                <p class="text-muted">
+                    Par ailleurs, nous offrons des services de sérigraphie pour vos besoins en impression sur divers supports. Notre approche personnalisée nous permet de comprendre vos besoins spécifiques et de proposer des solutions sur mesure pour optimiser vos activités et renforcer votre compétitivité sur le marché.
+                </p>
+            </div>
+            
+            
+            
+        </div>
+    </section>
+    
+    
+    <!-- End About Section -->
+    <!-- Start Cta -->
+    <section class="py-10 bg-white relative">
+        <div class="container">
+            <div class="grid grid-cols-1">
+                <div class="text-center rounded-[15px] py-[60px] px-[30px] bg-custom relative text-white">
+                    <div class="bg-[url(../images/wave-mask.png)] absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full"></div>
+                    <h2 class="font-bold text-[40px] capitalize relative z-10">🚀🔍Codeurs et Créatifs Ambitieux 🎨💻 </h2>
+                    <p class="mx-auto max-w-[600px] text-lg leading-[1.5] mt-6 text-[#f7f7f7] relative">
+                        <div class="mt-6">
+                            <p class="mb-1 "><i class="mdi mdi-check-circle text-white text-xl relative top-[2px]"></i> 
+                                Engagés dans notre métier.
+                            </p>
+
+                            <p class="mb-0"><i class="mdi mdi-check-circle text-white text-xl relative top-[2px]"></i>
+                                 Explorant en profondeur notre domaine de travail.
+                            </p>
+                            
+                            <p class="mb-0"><i class="mdi mdi-check-circle text-white text-xl relative top-[2px]"></i> 
+                                Des solutions digitales innovantes pour votre succès.
+                            </p>
+
+
+                        </div>
+                        <div class="mt-10 relative z-10">
+                            <div class="text-center">                                
+                                <a href='{% url "front:services" %}'  class="lightbox border-[3px] inline-block rounded-full p-[7px]">
+                                    Nos Services
+                                </a>
+                                <a href='{% url "front:solutions" %}'  class="lightbox border-[3px] inline-block rounded-full p-[7px]">
+                                    Nos Solutions
+                                </a>
+                            </div>
+                        </div>
+                       
+                        
+                    </p>
+                  
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Cta -->
+    
+
+
+
+    
+
+{% endblock %}

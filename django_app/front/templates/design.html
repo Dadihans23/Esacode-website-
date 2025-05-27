@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block title %}Communication digitale pour entreprise - Solutions Esacode{% endblock %}
+{% block header %}Services - Esacode | Services numériques sur mesure pour entreprises et particuliers{% endblock %}
+
+{% block meta_description %}
+Votre communication digitale rentable pour entreprise avec Esacode : stratégie sur-mesure, web, mobile, design, ERP Odoo et solutions innovantes.
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+<!-- Start Graphic Design Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-10">
+            <div>
+                <div>
+                    <img src="{% static '/assets/images/esacode-logo.png' %}" alt="Logo Esacode" class="mx-auto img-fluid d-block" style="width: 50%;">
+                </div>
+            </div>
+            <div class="justified-text">
+                <h3 class="font-bold text-[26px] mb-4">Design graphique : séduire votre audience</h3>
+                <p class="text-muted mb-4">
+                    Dans le digital, la <strong>première impression</strong> est souvent décisive. C’est pourquoi notre équipe de designers s’engage à créer des visuels qui marquent les esprits.
+                </p>
+                <p class="text-muted mb-4">
+                    Nous vous accompagnons dans la conception de votre image de marque à travers des éléments graphiques professionnels et adaptés à votre cible.
+                </p>
+                <p class="text-muted">
+                    Un design soigné est la base d’une communication digitale qui inspire <strong>confiance</strong> et <strong>professionnalisme</strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="justified-text mt-10 px-10">
+            <!-- Points clés -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4">
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Logo design" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Création de logos mémorables et impactants</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Visuels RS" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Visuels captivants pour les réseaux sociaux</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Identité visuelle" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Création d’identités visuelles fortes et cohérentes</span>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-10 text-center">
+                <a href="{% url 'front:contact' %}" class="inline-block bg-custom text-white font-semibold px-8 py-3 rounded-[8px] shadow hover:bg-opacity-90 transition">
+                    Discutons de votre image de marque
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+{% include 'includes/portfolio.html' %}
+
+{% include 'includes/cta_contact.html' %}
+{% endblock %}

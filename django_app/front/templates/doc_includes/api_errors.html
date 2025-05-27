@@ -1,0 +1,28 @@
+{% load static %} 
+<section id="api_errors">
+    <div class="border-2 border-[#f4f4f4] rounded-md mt-0">
+        <div class="p-[26px] border-b-2 border-[#f4f4f4]">
+            <h5 class="font-bold text-xl">Gestion des Erreurs de l'API</h5>
+        </div>
+        <div class="p-[26px] overflow-x-auto w-full">
+            <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px;">
+<p style="color: #0AA195;">Lorsque l'API rencontre une erreur, elle renvoie une réponse JSON incluant un champ success défini à false et un champ erreur fournissant des détails sur l'erreur.</p>
+<p style="color: #0AA195;">Exemple de réponse en cas d'erreur :</p>
+<pre>
+{
+"success": error,
+"erreur": "Description de l'erreur"
+}
+</pre>
+<p style="color: #0AA195;">Les erreurs peuvent survenir pour plusieurs raisons, telles que :</p>
+<ul style="color: #0AA195;">
+<li>Requête malformée (par exemple, corps de la requête manquant ou incorrect)</li>
+<li>Problème de connexion au service de traduction</li>
+<li>Texte vide fourni à l'API</li>
+<li>Codes de langue non pris en charge ou incorrects</li>
+</ul>
+<p style="color: #0AA195;">Il est recommandé de vérifier la réponse de l'API pour le champ success et de gérer les erreurs en conséquence dans votre application ou script.</p>
+            </div>
+        </div>
+    </div>
+</section>

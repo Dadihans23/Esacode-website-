@@ -1,0 +1,306 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block title %}Communication digitale pour entreprise - Solutions esacode{% endblock %}
+{% block header %}Services - Esacode | Services numériques sur mesure pour entreprises et particuliers{% endblock %}
+
+
+{% block meta_description %}
+Votre communication digitale rentable pour entreprise avec esacode : stratégie sur-mesure, web, mobile, design, ERP Odoo et solutions innovantes.
+{% endblock %}
+
+
+
+
+{% block content %}
+
+
+
+<!-- Start banner -->
+<section class="md:pt-[170px] pt-[120px] pb-20 md:pb-[90px] bg-cover bg-[url(../images/bg-pages.jpg)] relative">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <h1 class="font-bold text-[36px]">Services</h1>
+            <p class="mt-2">Découvrez nos services innovants adaptés à vos besoins.</p>
+            <div class="mt-4">
+                <a class='btn-custom py-2 px-[15px]' href='{% url "front:contact" %}'>Contactez-nous</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- End banner -->
+
+<!-- Start Services -->
+<section class="py-20 bg-white">
+    <div class="container">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-[30px] justify-items-center">
+            <!-- Service 1 - Intégration ERP Odoo -->
+            <a href="{% url "front:erp_services"%}" class="block">
+            <div class="holographic-card relative overflow-hidden text-center p-4 cursor-pointer transition hover:shadow-lg">
+                    <div>
+                    <i class="mdi mdi-briefcase text-white/80 text-[40px] leading-[84px] text-center w-[84px] h-[84px] inline-block bg-custom rounded-[10px]"></i>
+                    </div>
+                    <div class="mt-6">
+                    <h4 class="font-bold text-2xl">Intégration ERP Odoo</h4>
+                    <p class="text-muted mt-4">
+                        Optimisez votre gestion avec Odoo grâce à notre expertise en implémentation, développement sur mesure, support, formation et personnalisation des rapports.
+                    </p>
+                    </div>
+                </div>
+            </a>
+            
+
+            <!-- Service 2 - Développement Web -->
+            <a href="{% url 'front:web_development' %}" class="block">
+            <div class="holographic-card relative overflow-hidden text-center p-4 cursor-pointer transition hover:shadow-lg">
+                    <div>
+                        <i class="mdi mdi-web text-white/80 text-[40px] leading-[84px] text-center w-[84px] h-[84px] inline-block bg-custom rounded-[10px]"></i>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-bold text-2xl">Développement Web</h4>
+                        <p class="text-muted mt-4">Nous concevons des applications web performantes et sur mesure pour répondre à vos objectifs.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Service 3 - Développement Mobile -->
+            <a href="{% url 'front:mobile_development' %}" class="block">
+            <div class="holographic-card relative overflow-hidden text-center p-4 cursor-pointer transition hover:shadow-lg">
+                    <div>
+                        <i class="mdi mdi-cellphone text-white/80 text-[40px] leading-[84px] text-center w-[84px] h-[84px] inline-block bg-custom rounded-[10px]"></i>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-bold text-2xl">Développement Mobile</h4>
+                        <p class="text-muted mt-4">Créez des applications mobiles intuitives pour Android et iOS, adaptées à vos utilisateurs.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Service 4 - Design -->
+            <a href="{% url 'front:design_service' %}" class="block">
+            <div class="holographic-card relative overflow-hidden text-center p-4 cursor-pointer transition hover:shadow-lg">
+                    <div>
+                        <i class="mdi mdi-palette text-white/80 text-[40px] leading-[84px] text-center w-[84px] h-[84px] inline-block bg-custom rounded-[10px]"></i>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-bold text-2xl">Design</h4>
+                        <p class="text-muted mt-4">Un design élégant et fonctionnel pour garantir une expérience utilisateur optimale.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Service 5 - Communication Digitale -->
+            <a href="{% url 'front:digital_communication' %}" class="block">
+            <div class="holographic-card relative overflow-hidden text-center p-4 cursor-pointer transition hover:shadow-lg">
+                    <div>
+                        <i class="mdi mdi-facebook text-white/80 text-[40px] leading-[84px] text-center w-[84px] h-[84px] inline-block bg-custom rounded-[10px]"></i>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-bold text-2xl">Communication Digitale</h4>
+                        <p class="text-muted mt-4">Boostez votre présence en ligne grâce à nos solutions de gestion des réseaux sociaux et campagnes digitales.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Service 6 - Solutions sur Mesure -->
+            <a href="{% url 'front:custom_solutions' %}" class="block">
+            <div class="holographic-card relative overflow-hidden text-center p-4 cursor-pointer transition hover:shadow-lg">
+                    <div>
+                        <i class="mdi mdi-lightbulb-on-outline text-white/80 text-[40px] leading-[84px] text-center w-[84px] h-[84px] inline-block bg-custom rounded-[10px]"></i>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-bold text-2xl">Solutions sur Mesure</h4>
+                        <p class="text-muted mt-4">Nous adaptons nos services pour répondre précisément à vos besoins spécifiques.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Service 7 - Impression & Sérigraphie -->
+            <a href="{% url 'front:printing_service' %}" class="block">
+            <div class="holographic-card relative overflow-hidden text-center p-4 cursor-pointer transition hover:shadow-lg">
+                    <div>
+                        <i class="mdi mdi-printer text-white/80 text-[40px] leading-[84px] text-center w-[84px] h-[84px] inline-block bg-custom rounded-[10px]"></i>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-bold text-2xl">Impression & Sérigraphie</h4>
+                        <p class="text-muted mt-4">Nous offrons des services d'impression sur tous types de supports avec une qualité exceptionnelle.</p>
+                    </div>
+                </div>
+            </a>
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- End Services -->
+
+
+<section class="bg-[url('../images/home_sec_features.jpg')] bg-center py-20 bg-white relative">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+            <div class="bg-white py-[26px] px-5 rounded-md relative -top-[130px] border border-[#e7e7e7]/50">
+                <div class="flex items-center">
+                    <div class="bg-custom shrink-0 h-[50px] w-[50px] leading-[50px] rounded-lg text-center mr-4 rtl:mr-0 rtl:ml-4">
+                        <img src="{% static 'assets/images/esa_icon/sketch.svg' %}" class="h-[26px] mx-auto inline-block" alt="...">
+                    </div>
+                    <div class="grow">
+                        <h5 class="text-xl font-bold">Expertise Technique</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white py-[26px] px-5 rounded-md relative -top-[130px] border border-[#e7e7e7]/50">
+                <div class="flex items-center">
+                    <div class="bg-custom shrink-0 h-[50px] w-[50px] leading-[50px] rounded-lg text-center mr-4 rtl:mr-0 rtl:ml-4">
+                        <img src="{% static 'assets/images/esa_icon/bulb.svg' %}" class="h-[26px] mx-auto inline-block" alt="...">
+                    </div>
+                    <div class="grow">
+                        <h5 class="text-xl font-bold">Accompagnement Personnalisé</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white py-[26px] px-5 rounded-md relative -top-[130px] border border-[#e7e7e7]/50">
+                <div class="flex items-center">
+                    <div class="bg-custom shrink-0 h-[50px] w-[50px] leading-[50px] rounded-lg text-center mr-4 rtl:mr-0 rtl:ml-4">
+                        <img src="{% static 'assets/images/esa_icon/lnterselect.svg' %}" class="h-[26px] mx-auto inline-block" alt="...">
+                    </div>
+                    <div class="grow">
+                        <h5 class="text-xl font-bold">Résultats Garantis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1">
+            <div class="text-center">
+                <h2 class="font-bold text-[32px] md:text-[40px] capitalize mb-2 relative z-10"><span class="bg-[#dff1f0] h-[70px] w-[70px] inline-block absolute rounded-full -z-10 -top-[15px]"></span>
+                    Notre Approche de la Transformation Digitale
+                </h2>
+                <p class="text-muted mx-auto text-lg max-w-[600px] mt-6">
+                    Découvrez comment nous transformons vos idées en solutions numériques performantes et innovantes.
+
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-16 items-center">
+            <div>
+                <img src="{% static 'assets/images/features/3.png' %}" alt="business" class="mx-auto">
+            </div>
+            <div>
+                <h3 class="md:text-[32px] text-2xl leading-[1.4] font-bold">Une Méthodologie Éprouvée</h3>
+                <div class="mb-4 space-y-8">
+                    <div class="flex gap-5 mt-8 iteml-start">
+                        <div class="grow">
+                            <i class="mdi mdi-check bg-custom text-white text-lg leading-[26px] h-[26px] w-[26px] relative top-1 text-center rounded-full inline-block"></i>
+                        </div>
+                        <div>
+                            <h3 class="mb-4 text-lg font-bold">Analyse & Conseil</h3>
+                            <p class="text-[15px] leading-[22px] text-muted">Nous étudions vos besoins en profondeur pour vous proposer les solutions les plus adaptées à votre activité.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5 mt-8 iteml-start">
+                        <div class="grow">
+                            <i class="mdi mdi-check bg-custom text-white text-lg leading-[26px] h-[26px] w-[26px] relative top-1 text-center rounded-full inline-block"></i>
+                        </div>
+                        <div>
+                            <h3 class="mb-4 text-lg font-bold">Développement Agile</h3>
+                            <p class="text-[15px] leading-[22px] text-muted">Notre approche itérative permet d'adapter rapidement les solutions à vos retours et aux évolutions de vos besoins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-16 items-center">
+            <div>
+                <h3 class="text-[32px] font-bold leading-[1.4] max-w-[520px]">Ce qui fait notre différence</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-6">
+                    <div class="">
+                        <div class="bg-gradient-to-r from-white to-custom/20 w-[54px] h-[54px] flex items-center justify-center -rotate-45 leading-[54px] rounded-md ">
+                            <img src="{% static 'assets/images/esa_icon/pen%26ruller.svg' %}" alt="" class="mx-auto inline-block h-[30px] rotate-45">
+                        </div>
+                        <div class="mt-6">
+                            <h5 class="text-xl font-bold">Documentation Complète</h5>
+                            <p class="mt-4 text-muted">Chaque projet est livré avec une documentation détaillée pour une prise en main facile.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="bg-gradient-to-r from-white to-custom/20 w-[54px] h-[54px] flex items-center justify-center -rotate-45 leading-[54px] rounded-md ">
+                            <img src="{% static 'assets/images/esa_icon/code.svg' %}" alt="" class="mx-auto inline-block h-[30px] rotate-45">
+                        </div>
+                        <div class="mt-6">
+                            <h5 class="text-xl font-bold">Solutions Adaptables</h5>
+                            <p class="mt-4 text-muted">Nos solutions évoluent avec vos besoins et s'adaptent à votre croissance.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="bg-gradient-to-r from-white to-custom/20 w-[54px] h-[54px] flex items-center justify-center -rotate-45 leading-[54px] rounded-md ">
+                            <img src="{% static 'assets/images/esa_icon/headphones.svg' %}" alt="" class="mx-auto inline-block h-[30px] rotate-45">
+                        </div>
+                        <div class="mt-6">
+                            <h5 class="text-xl font-bold">Support 24/7</h5>
+                            <p class="mt-4 text-muted">Une équipe dédiée à votre écoute pour répondre à vos questions à tout moment.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="bg-gradient-to-r from-white to-custom/20 w-[54px] h-[54px] flex items-center justify-center -rotate-45 leading-[54px] rounded-md ">
+                            <img src="{% static 'assets/images/esa_icon/groupchat.svg' %}" alt="" class="mx-auto inline-block h-[30px] rotate-45">
+                        </div>
+                        <div class="mt-6">
+                            <h5 class="text-xl font-bold">Communauté Active</h5>
+                            <p class="mt-4 text-muted">Rejoignez notre réseau d'entreprises innovantes et partagez vos expériences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="{% static 'assets/images/features/5.png' %}" alt="business" class="mx-auto">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% block extra_css %}
+<style>
+.holographic-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+.holographic-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.3), rgba(255, 0, 255, 0.3), rgba(0, 255, 255, 0.3));
+    opacity: 0;
+    transform: rotate(25deg) translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.holographic-card:hover::before {
+    opacity: 1;
+    transform: rotate(25deg) translateY(20px);
+}
+
+.holographic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+</style>
+{% endblock %}
+
+
+
+{% include 'includes/portfolio.html' %}
+
+{% include 'includes/cta_contact.html' %}
+{% endblock %}
+
+

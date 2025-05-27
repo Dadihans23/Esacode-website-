@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block title %}Dévéloppement mobile - Services Esacode{% endblock %}
+{% block header %}Services - Esacode | Services numériques sur mesure pour entreprises et particuliers{% endblock %}
+
+{% block meta_description %}
+Votre communication digitale rentable pour entreprise avec Esacode : stratégie sur-mesure, web, mobile, design, ERP Odoo et solutions innovantes.
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+
+<!-- Start Web Development Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] items-center">
+            <div>
+                    <img src="{% static '/assets/images/esacode-logo.png' %}" alt="Logo Esacode" class="mx-auto img-fluid d-block" style="width: 50%;">
+            </div>
+            <div class="justified-text">
+                <h3 class="text-[28px] font-bold mb-4">Développement web : votre site, votre meilleure arme digitale</h3>
+                <p class="text-muted mb-4">
+                    Votre site internet est votre vitrine accessible 24h/24, 7j/7. Il est au cœur de votre <strong>communication digitale pour entreprise</strong> et représente souvent le premier contact avec vos prospects.
+                </p>
+                <p class="text-muted mb-4">
+                    Chez <span class="text-custom">Esacode</span>, nous créons des sites web modernes, ergonomiques et <strong>SEO-friendly</strong>, parfaitement alignés avec votre stratégie de marque et vos objectifs business.
+                </p>
+                <p class="text-muted mb-4">
+                    Que ce soit pour présenter vos services, vendre en ligne ou générer des leads, nous développons des solutions web sur mesure qui valorisent votre image et stimulent votre croissance.
+                </p>
+                <p class="text-muted">
+                    En tant qu’agence spécialisée en <strong>développement web</strong>, nous mettons l’accent sur la performance, l’expérience utilisateur et la visibilité en ligne.
+                </p>
+            </div>
+        </div>
+
+        <div class="justified-text mt-10 px-10">
+            <!-- Points clés -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Design moderne" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="inline-block ml-2 text-muted">Design moderne et responsive</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Optimisation SEO" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Optimisé pour le référencement naturel (SEO)</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="CMS ou sur-mesure" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Développement sur CMS (WordPress, etc.) ou sur-mesure</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Conversion" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Conçu pour convertir vos visiteurs en clients</span>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-10 text-center">
+                <a href="{% url 'front:contact' %}" class="inline-block bg-custom text-white font-semibold px-8 py-3 rounded-[8px] shadow hover:bg-opacity-90 transition">
+                    Discutons de votre projet web
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% include 'includes/portfolio.html' %}
+
+{% include 'includes/cta_contact.html' %}
+{% endblock %}

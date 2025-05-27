@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block title %}Communication digitale pour entreprise - Solutions esacode{% endblock %}
+{% block header %}Services - Esacode | Services numériques sur mesure pour entreprises et particuliers{% endblock %}
+
+{% block meta_description %}
+Votre communication digitale rentable pour entreprise avec esacode : stratégie sur-mesure, web, mobile, design, ERP Odoo et solutions innovantes.
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+<!-- Debut  bannière -->
+
+<section class="md:pt-[170px] pt-[120px] pb-20 md:pb-[90px] bg-cover relative" style="background-image: url('{% static '/assets/images/bg-pages.jpg' %}')">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <h1 class="font-bold text-[36px]">Esacode et l’intégration ERP</h1>
+            <p class="mt-2">Votre partenaire de confiance pour une transformation digitale réussie</p>
+        </div>
+    </div>
+</section>
+<!-- Fin bannière -->
+
+<section class="py-20 bg-white">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <div>
+                <img src="{% static 'assets/images/about_page_img.jpg' %}" class="rounded-[30px] mx-auto block" alt="Transformation digitale Esacode">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-10">
+            <div>
+                <div>
+                    <img src="{% static '/assets/images/esacode-logo.png' %}" alt="Logo Esacode" class="mx-auto img-fluid d-block" style="width: 50%;">
+                </div>
+            </div>
+            <div class="justified-text">
+                <p class="text-muted mb-4">
+                    Un ERP (Enterprise Resource Planning) est la <strong>solution ERP</strong> essentielle pour centraliser, automatiser et piloter efficacement toutes les opérations de votre entreprise.
+                </p>
+                <p class="text-muted mb-4">
+                    Avec un système ERP, vous intégrez vos données marketing, commerciales, financières et RH dans une plateforme unique, ce qui améliore la fluidité de vos processus internes.
+                </p>
+                <p class="text-muted mb-4">
+                    <strong>Un bon système de gestion est le socle d'une communication digitale pour entreprise efficace.</strong>
+                </p>
+                <p class="text-muted">
+                    Grâce à <strong>Odoo</strong>, notre solution ERP de choix, nous vous aidons à centraliser vos données, gérer vos campagnes de communication, et analyser vos performances en temps réel.
+                </p>
+            </div>
+        </div>
+
+        <div class="justified-text mt-10 px-10">
+            <p class="text-muted mb-4">
+                Chez<span class="text-custom">esacode</span>, nous proposons une intégration personnalisée d’<strong>Odoo</strong>, une solution ERP puissante, modulable et totalement intégrée, qui répond aux besoins spécifiques de votre entreprise.
+            </p>
+            <p class="text-muted mb-4">
+                Notre accompagnement couvre toutes les étapes du projet : audit, paramétrage, personnalisation, formation des équipes, déploiement et support continu.
+            </p>
+            <p class="text-muted mb-4">
+                Opter pour <span class="text-custom">esacode</span> et sa <strong>solution ERP</strong> basée sur Odoo, c’est faire le choix d’une organisation interne plus fluide et d’une <strong>communication digitale pour entreprise</strong> plus performante.
+            </p>
+
+            <!-- Points clés -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Centraliser données" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="inline-block ml-2 text-muted">Centraliser vos données marketing et commerciales</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Gérer communication" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Gérer vos campagnes de communication de manière automatisée</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Suivi des ventes" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Suivre vos ventes, devis et commandes en temps réel</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Tableaux de bord" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Accéder à des tableaux de bord dynamiques pour piloter vos performances</span>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-10 text-center">
+                <a href="{% url 'front:contact' %}" class="inline-block bg-custom text-white font-semibold px-8 py-3 rounded-[8px] shadow hover:bg-opacity-90 transition">
+                    Demandez votre audit gratuit
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% include 'includes/portfolio.html' %}
+
+{% include 'includes/cta_contact.html' %}
+{% endblock %}

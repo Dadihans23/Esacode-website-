@@ -1,0 +1,50 @@
+{% extends 'auth_base.html' %}
+{% load static %} 
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+     <!-- Start Login -->
+     <div class="grid grid-cols-1 mt-16">
+        <div class="max-w-[450px] mx-auto py-10 px-8 rounded-xl bg-white w-full">
+            <h4 class="font-bold text-2xl mb-2 text-center capitalize">Se connecter</h4>
+            <p class="text-muted text-center">
+               Content de vous revoir.
+            </p>
+            <form class="mt-6 space-y-4" method="POST" action="{% url 'backend:login_user' %}">
+                {% csrf_token %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert-error">
+                            <strong>Erreur !</strong>
+                            <span>{{ message }}</span>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <div>
+                    <label class="font-bold">Adresse e-mail</label>
+                    <input type="email" name="email" class="form-input mt-2 rounded !bg-white border border-[#ced4da] text-base focus:border-custom" placeholder="Email Id" required>
+                </div>
+                <div>
+                    <label class="font-bold">Mot de passe</label>
+                    <input type="password" name="password" class="form-input mt-2 rounded !bg-white border border-[#ced4da] text-base focus:border-custom" placeholder="Password" required>
+                </div>
+                <div>
+                    <input type="checkbox" class="form-checkbox border-[#ced4da] rounded focus:ring-transperent focus:outline-none h-4 w-4 text-custom" id="sign">
+                    <label for="sign" class="ml-1 relative top-[2px]">Se souvenir de moi</label>
+                </div>
+                <div>
+                    <button type="submit" class="btn-custom w-full">Se connecter</button>
+                </div>
+            </form>
+            
+            <div class="mt-4 text-center">
+                <a class='font-bold' href="{% url 'front:forgot_password' %}">Mot de passe oublié ?</a>
+            </div>
+        </div>
+        <div class="text-center mt-6">
+            <p><small class="text-white mr-2">Vous n'avez pas de compte ?</small> <a class='text-white font-bold' href='{% url "front:register" %}'>Créer un compte</a></p>
+        </div>
+    </div>
+    <!-- End Login -->
+{% endblock %}

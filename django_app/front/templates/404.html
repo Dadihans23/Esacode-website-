@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}Page introuvable{% endblock %}
+
+{% block content %}
+<section class="pt-[124px] pb-20 bg-cover bg-center relative" style="background-image: url('{% static '/assets/images/land_bg_four.jpg' %}')">
+    <div class="absolute inset-0 bg-no-repeat bg-center bg-cover" style="background-image: url('{% static '/assets/images/hero-4-bg.png' %}')"></div>
+    <div class="container relative">
+            <div class="grid grid-cols-1">
+                <div class="max-w-[700px] text-center mx-auto w-full bg-white border-[10px] border-custom/10 py-[50px] px-10">
+                    <p class="uppercase tracking-[4px]"><span class="h-[2px] -top-[5px] relative bg-custom w-10 mx-1 inline-block"></span> Esacode <span class="h-[2px] -top-[5px] relative bg-custom w-10 mx-1 inline-block"></span></p>
+                    <h1 class="font-bold text-2xl md:text-[24px] mt-4 leading-[1.4]">
+                        Désolé, la page que vous recherchez n'existe pas.
+                    </h1>
+                    <p class="text-muted mt-6">
+                        Veuillez vérifier l'URL que vous avez saisie ou retourner à la <a href="{% url 'front:welcome' %}" class="text-custom">page d'accueil</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

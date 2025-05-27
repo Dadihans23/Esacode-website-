@@ -1,0 +1,249 @@
+{% load static %} 
+
+<!-- includes/portfolio.html -->
+
+<section class="relative pb-20 mt-5 md:mt-5 bg-light" id="esa_portfolio">
+    <div class="container relative">
+        <div class="grid grid-cols-1">
+            <div class="text-center">
+                <h2 class="font-bold text-[32px] md:text-[40px] capitalize mb-2 relative z-10">
+                    <span class="bg-[#dff1f0] h-[70px] w-[70px] inline-block absolute rounded-full -z-10 -top-[15px]"></span>
+                    Nos Réalisations
+                </h2>
+                <p class="text-muted mx-auto text-lg max-w-[600px] mt-6">
+                    Découvrez les solutions numériques que nous avons réalisées pour nos clients.
+                </p>
+            </div>
+
+            <!-- Afrique -->
+            <h3 class="font-bold text-xl text-center mt-12 mb-6 text-custom py-5">Afrique</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+                <!-- MMAS -->
+                <div>
+                    <img src="{% static 'assets/images/clients/mmas-ci.png' %}" alt="MMAS-CI" class="mx-auto block rounded bg-white p-4">
+                    <div class="py-6">
+                        <div class="flex items-center gap-3">
+                            <div class="shrink-0 h-12 w-12 leading-[48px] bg-custom/[17%] rounded-full text-center text-2xl">
+                                <i class="mdi mdi-package-variant text-custom"></i>
+                            </div>
+                            <h5 class="font-bold text-xl">MMAS-CI</h5>
+                        </div>
+                        <div class="flex items-center gap-2 mt-4 text-sm text-custom">
+                            <i class="mdi mdi-map-marker"></i>
+                            <span>Côte d'Ivoire</span>
+                            <span class="mx-2">|</span>
+                            <i class="mdi mdi-factory"></i>
+                            <span>Distribution de Matériaux</span>
+                        </div>
+                        <ul class="text-muted mt-6 space-y-2">
+                            <li><span class="custom-bullet">•</span> Réalisation d'un site vitrine pour la présentation de l'entreprise et ses activités</li>
+                            <li><span class="custom-bullet">•</span> Développement d'un site catalogue dédié au Ciment Guepard avec module de devis en ligne</li>
+                            <li><span class="custom-bullet">•</span> Mise en place d'un système de gestion pour l'administration des contenus des sites web, la gestion des stocks et la comptabilité de l'entreprise.</li>
+                            <li><span class="custom-bullet">•</span> Animation et gestion de la présence sur les réseaux sociaux</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cabinet Vetoland -->
+                <div>
+                    <img src="{% static 'assets/images/clients/vetoland.png' %}" alt="Vetoland" class="mx-auto block rounded bg-white p-4">
+                    <div class="py-6">
+                        <div class="flex items-center gap-3">
+                            <div class="shrink-0 h-12 w-12 leading-[48px] bg-custom/[17%] rounded-full text-center text-2xl">
+                                <i class="mdi mdi-medical-bag text-custom"></i>
+                            </div>
+                            <h5 class="font-bold text-xl">Cabinet Vetoland</h5>
+                        </div>
+                        <div class="flex items-center gap-2 mt-4 text-sm text-custom">
+                            <i class="mdi mdi-map-marker"></i>
+                            <span>Bénin</span>
+                            <span class="mx-2">|</span>
+                            <i class="mdi mdi-hospital-box"></i>
+                            <span>Santé Animale</span>
+                        </div>
+                        <ul class="text-muted mt-6 space-y-2">
+                            <li><span class="custom-bullet">•</span> Création d'un site vitrine professionnel</li>
+                            <li><span class="custom-bullet">•</span> Installation et configuration de l'ERP Odoo avec :</li>                            
+                            <li class="pl-6"><span class="custom-bullet">-</span> Module Commercial : devis, ventes, achats et facturation</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Module Stock : médicaments, consommables, inventaire</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Module Comptabilité : paiements et comptabilité générale</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Module CRM : base clients, rappels et communications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pexcom -->
+                <div>
+                    <img src="{% static 'assets/images/clients/pexcom.png' %}" alt="Pexcom" class="mx-auto block rounded bg-white p-4">
+                    <div class="py-6">
+                        <div class="flex items-center gap-3">
+                            <div class="shrink-0 h-12 w-12 leading-[48px] bg-custom/[17%] rounded-full text-center text-2xl">
+                                <i class="mdi mdi-calculator text-custom"></i>
+                            </div>
+                            <h5 class="font-bold text-xl">PHENIX EXPERTISE COMPTABLE</h5>
+                        </div>
+                        <div class="flex items-center gap-2 mt-4 text-sm text-custom">
+                            <i class="mdi mdi-map-marker"></i>
+                            <span>Bénin</span>
+                            <span class="mx-2">|</span>
+                            <i class="mdi mdi-finance"></i>
+                            <span>Expertise Comptable</span>
+                        </div>
+                        <ul class="text-muted mt-6 space-y-2">
+                            <li><span class="custom-bullet">•</span> Création d'un site vitrine professionnel présentant les services du cabinet</li>
+                            <li><span class="custom-bullet">•</span> Mise en place d'une interface de contact client</li>
+                            <li><span class="custom-bullet">•</span> Développement d'une section ressources et actualités</li>
+                            <li><span class="custom-bullet">•</span> Gestion de la présence sur les réseaux sociaux professionnels</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ACS -->
+                <div>
+                    <img src="{% static 'assets/images/clients/acs.png' %}" alt="ACS" class="mx-auto block rounded bg-white p-4">
+                    <div class="py-6">
+                        <div class="flex items-center gap-3">
+                            <div class="shrink-0 h-12 w-12 leading-[48px] bg-custom/[17%] rounded-full text-center text-2xl">
+                                <i class="mdi mdi-ruler text-custom"></i>
+                            </div>
+                            <h5 class="font-bold text-xl">L'ACIER CONSEIL ET SERVICES</h5>
+                        </div>
+                        <div class="flex items-center gap-2 mt-4 text-sm text-custom">
+                            <i class="mdi mdi-map-marker"></i>
+                            <span>Bénin</span>
+                            <span class="mx-2">|</span>
+                            <i class="mdi mdi-ruler-square"></i>
+                            <span>Bureau d'Études Génie Civil</span>
+                        </div>
+                        <ul class="text-muted mt-6 space-y-2">
+                            <li><span class="custom-bullet">•</span> Conception d'un site vitrine professionnel présentant :</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Les domaines d'expertise en génie civil</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> L'équipe et les compétences techniques</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Le portfolio des projets réalisés</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Les certifications et agréments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- OUISSI STONES -->
+                <div>
+                    <img src="{% static 'assets/images/clients/OUISSI-STONES-SA.png' %}" alt="OUISSI STONES" class="mx-auto block rounded bg-white p-4">
+                    <div class="py-6">
+                        <div class="flex items-center gap-3">
+                            <div class="shrink-0 h-12 w-12 leading-[48px] bg-custom/[17%] rounded-full text-center text-2xl">
+                                <i class="mdi mdi-ruler text-custom"></i>
+                            </div>
+                            <h5 class="font-bold text-xl">OUISSI STONES SA</h5>
+                        </div>
+                        <div class="flex items-center gap-2 mt-4 text-sm text-custom">
+                            <i class="mdi mdi-map-marker"></i>
+                            <span>Bénin</span>
+                            <span class="mx-2">|</span>
+                            <i class="mdi mdi-mine"></i>
+                            <span>BTP</span>
+                        </div>
+                        <ul class="text-muted mt-6 space-y-2">
+                            <li><span class="custom-bullet">•</span> Création du logo et de la charte graphique de l'entreprise</li>
+                            <li><span class="custom-bullet">•</span> Développement de l'identité visuelle complète</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Europe -->
+            <h3 class="font-bold text-xl text-center mt-16 mb-6 text-custom py-5">Europe</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+                <!-- BME -->
+                <div>
+                    <img src="{% static 'assets/images/clients/bme.png' %}" alt="BME" class="mx-auto block rounded bg-white p-4">
+                    <div class="py-6">
+                        <div class="flex items-center gap-3">
+                            <div class="shrink-0 h-12 w-12 leading-[48px] bg-custom/[17%] rounded-full text-center text-2xl">
+                                <i class="mdi mdi-domain text-custom" ></i>
+                            </div>
+                            <h5 class="font-bold text-xl">BME CONSULTING</h5>
+                        </div>
+                        <div class="flex items-center gap-2 mt-4 text-sm text-custom">
+                            <i class="mdi mdi-map-marker"></i>
+                            <span>France</span>
+                            <span class="mx-2">|</span>
+                            <i class="mdi mdi-domain"></i>
+                            <span>Consulting</span>
+                        </div>
+                        <ul class="text-muted mt-6 space-y-2">
+                            <li><span class="custom-bullet">•</span> Assistance et maintenance de l'ERP Odoo community 15</li>
+                            <li><span class="custom-bullet">•</span> Consultation technique pour l'optimisation des processus</li>
+                            <li><span class="custom-bullet">•</span> Développement de modules personnalisés pour :</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Ventes et CRM</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Gestion des stocks</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Comptabilité et finances</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Ressources humaines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Flatcargo -->
+                <div>
+                    <img src="{% static 'assets/images/clients/flatcargo.png' %}" alt="Flatcargo" class="mx-auto block rounded bg-white p-4">
+                    <div class="py-6">
+                        <div class="flex items-center gap-3">
+                            <div class="shrink-0 h-12 w-12 leading-[48px] bg-custom/[17%] rounded-full text-center text-2xl">
+                                <i class="mdi mdi-truck text-custom"></i>
+                            </div>
+                            <h5 class="font-bold text-xl">FLATCARGO</h5>
+                        </div>
+                        <div class="flex items-center gap-2 mt-4 text-sm text-custom">
+                            <i class="mdi mdi-map-marker"></i>
+                            <span>France</span>
+                            <span class="mx-2">|</span>
+                            <i class="mdi mdi-truck-delivery"></i>
+                            <span>Logistique & Transport</span>
+                        </div>
+                        <ul class="text-muted mt-6 space-y-2">
+                            <li><span class="custom-bullet">•</span> Maintenance et support de l'ERP Odoo community 15</li>
+                            <li><span class="custom-bullet">•</span> Services de consultation pour l'optimisation des flux logistiques</li>
+                            <li><span class="custom-bullet">•</span> Développement et configuration des modules :</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Gestion des achats et approvisionnements</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Suivi des livraisons et expéditions</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Gestion des stocks et inventaires</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Intégration comptable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Simply On -->
+                <div>
+                    <img src="{% static 'assets/images/clients/simplyon.png' %}" alt="Simply On" class="mx-auto block rounded bg-white p-4">
+                    <div class="py-6">
+                        <div class="flex items-center gap-3">
+                            <div class="shrink-0 h-12 w-12 leading-[48px] bg-custom/[17%] rounded-full text-center text-2xl">
+                                <i class="mdi mdi-database text-custom"></i>
+                            </div>
+                            <h5 class="font-bold text-xl">SIMPLY ON</h5>
+                        </div>
+                        <div class="flex items-center gap-2 mt-4 text-sm text-custom">
+                            <i class="mdi mdi-map-marker"></i>
+                            <span>France</span>
+                            <span class="mx-2">|</span>
+                            <i class="mdi mdi-database"></i>
+                            <span>Solutions Digitales</span>
+                        </div>
+                        <ul class="text-muted mt-6 space-y-2">
+                            <li><span class="custom-bullet">•</span> Déploiement complet d'Odoo community 18 et configuration initiale</li>
+                            <li><span class="custom-bullet">•</span> Maintenance continue et support technique</li>
+                            <li><span class="custom-bullet">•</span> Services de consultance pour l'optimisation des processus</li>
+                            <li><span class="custom-bullet">•</span> Personnalisation et paramétrage des modules :</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Ventes et CRM</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Gestion d'inventaire</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Achats et approvisionnements</li>
+                            <li class="pl-6"><span class="custom-bullet">-</span> Comptabilité et finances</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Amérique -->
+            
+        </div>
+    </div>
+</section>

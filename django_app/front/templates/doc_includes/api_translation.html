@@ -1,0 +1,37 @@
+{% load static %} 
+<section id="api_translation">
+    <div class="border-2 border-[#f4f4f4] rounded-md mt-0">
+        <div class="p-[26px] border-b-2 border-[#f4f4f4]">
+            <h5 class="font-bold text-xl">Documentation de l'API de Traduction de Texte</h5>
+        </div>
+        <div class="p-[26px] overflow-x-auto w-full">
+            <div style=" padding: 10px; border-radius: 5px;">
+<p style="color: #0AA195;">Utilisation</p>
+<p style="color: #0AA195;">Endpoint de traduction de texte</p>
+<p style="color: #0AA195;">URL : https://www.esacode.org/api/translate</p>
+<p style="color: #0AA195;">Méthode : POST</p>
+<p style="color: #0AA195;">Headers : Content-Type: application/json</p>
+<p style="color: #0AA195;">Corps de la requête :</p>
+<pre>
+{
+"message": "Before translating, please select a language.",
+"target_language": "fr",
+"source_language": "auto",  # Ce paramètre n'est pas obligatoire, mais vous pouvez l'ajouter et indiquer "auto" ou le code de la langue de votre texte  si vous le souhaitez.
+}
+</pre>
+<p style="color: #0AA195;">Réponse réussie :</p>
+<pre>
+{
+"status": "success",
+"source_language": "en",
+"source_language_name": "English",
+"target_language": "fr",
+"original_text": "Before translating, please select a language.",
+"translated_text": "Avant de traduire, veuillez sélectionner une langue."
+}
+</pre>
+            </div>
+            <!-- Add more content here -->
+        </div>
+    </div>
+</section>

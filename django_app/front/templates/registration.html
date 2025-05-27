@@ -1,0 +1,55 @@
+{% extends 'auth_base.html' %}
+{% load static %} 
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <!-- Start Registration -->
+    <div class="grid grid-cols-1 mt-16">
+        <div class="max-w-[450px] mx-auto py-10 px-8 rounded-xl bg-white w-full">
+            <h4 class="mb-2 text-2xl font-bold text-center capitalize">S'inscrire maintenant !</h4>
+            <p class="text-center text-muted">L'inscription prend moins d'une minute et vous donne un contrôle total sur vos commandes.</p>
+            <form class="mt-6 space-y-4" action="{% url 'backend:register_user' %}" method="POST">
+                {% csrf_token %}
+
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert-error">
+                            <strong>Erreur !</strong>
+                            <span>{{ message }}</span>
+                        </div>
+                    
+                    {% endfor %}
+                {% endif %}
+                         
+                <div>
+                    <label class="font-bold">Adresse e-mail</label>
+                    <input type="email" class="form-input mt-2 rounded !bg-white border border-[#ced4da] text-base focus:border-custom" placeholder="Email Id" name="email" required>
+                </div>
+                <div>
+                    <label class="font-bold">Mot de passe</label>
+                    <input type="password" class="form-input mt-2 rounded !bg-white border border-[#ced4da] text-base focus:border-custom" placeholder="Mot de passe" name="password" required>
+                </div>
+                <div>
+                    <label class="font-bold">Confirmez le mot de passe</label>
+                    <input type="password" class="form-input mt-2 rounded !bg-white border border-[#ced4da] text-base focus:border-custom" placeholder="Confirmez le mot de passe" name="confirm_password" required>
+                </div>
+                <div>
+                    <input type="checkbox" class="form-checkbox border-[#ced4da] rounded focus:ring-transperent focus:outline-none h-4 w-4 text-custom" id="sign" required>
+                    <label for="sign" class="ml-1 relative top-[2px]">J'accepte les <a href="#" class="text-custom">Termes et conditions</a></label>
+                </div>
+                <div>
+                    <button type="submit" class="w-full btn-custom">S'inscrire</button>
+                </div>
+                
+            </form>
+            
+            
+            
+        </div>
+        <div class="mt-6 text-center">
+            <p><small class="mr-2 text-white">Vous avez déjà un compte ?</small> <a class='font-bold text-white' href='{% url "front:login" %}'>Se connecter</a></p>
+        </div>
+    </div>
+    <!-- End Registration -->
+{% endblock %}

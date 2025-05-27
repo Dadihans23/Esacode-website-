@@ -1,0 +1,248 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}Traduction en Langue Africaine - solutions vocales esacode{% endblock %}
+{% block header %}Nos Solutions Esacode{% endblock %}
+
+{% block meta_description %}
+Boostez votre communication avec esacode : traduction en langue africaine, conversion texte en audio et clonage de voix pour toucher toutes vos audiences.
+{% endblock %}
+
+{% block content %}
+<!-- Start banner -->
+<section class="md:pt-[170px] pt-[120px] pb-20 md:pb-[90px] bg-cover relative" style="background-image: url('{% static '/assets/images/bg-pages.jpg' %}')">
+    <div class="container">
+       
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-[30px] py-10">
+            <div class=" max-w-[500px]">
+                 <div class="grid grid-cols-1">
+                    <h1 class="font-bold text-[36px]">Nos Solutions</h1>
+                    <p class="mt-2">Découvrez une communication redéfinie.</p>
+                </div> 
+            </div>
+            <div class="md:text-right rtl:md:text-left">
+                <div class="grid grid-cols-1">
+                    <h2 class="font-bold text-[36px]">La technologie au service de votre communication internationale </h2>
+                    <p class="mt-2"> <strong class="text-custom">Esacode</strong> , nous avons une conviction : la communication est le moteur de toute réussite.
+                    C’est pourquoi nous avons développé des <strong class="">Solutions innovantes</strong> pour permettre à votre entreprise de franchir les barrières linguistiques et culturelles, avec une attention particulière portée aux langues africaines.
+                    </p>
+                </div> 
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- End banner -->
+
+<!-- Start Conetent -->
+<section class="py-80 bg-white">
+
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-[30px]">
+            <div class="max-w-[450px] mx-auto">
+                <p class="[&>span]:bg-custom tracking-[6px] text-xs uppercase [&>span]:h-3 z-10 [&>span]:w-[60px] [&>span]:inline-block [&>span]:absolute [&>span]:opacity-10 relative "><span></span>
+                    solutions
+                </p>
+                <h3 class="font-bold text-[40px] capitalize mt-6">
+                    Traduction Multilingue   
+                </h3>
+                <p class="text-muted mt-6">
+                    Notre service fluide traduit dans plus de 40 langues, dont le haoussa, le fon , le wollof , le lingala , le baoulé , haoussa, le yoruba, le igbo, le français,
+                     l’anglais, le chinois, le japonais, le russe, l’espagnol, l’allemand, l’arabe et le portugais.
+                    Parlez, écoutez, comprenez, partout dans le monde. 🌎🗣️
+                    L’Afrique est un continent riche de plus de 2000 langues. Ignorer cette diversité, c’est se fermer à des marchés entiers.
+                    Chez<strong class="text-custom"> Esacode</strong>, nous proposons un service de traduction en langue africaine professionnel, fluide et fidèle aux spécificités culturelles.
+
+                </p>
+                <div class="mt-10">
+                    <a href='{% url "front:documentation" %}' class="btn-custom rounded-full">Api Docs</a>
+                </div>
+            </div>
+            <div>
+                <img src="{% static 'assets/images/solutions/transalte.png' %}"alt="com" class="mx-auto rounded-[30px]">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-[30px] mt-16">
+            <div>
+                <img src="{% static 'assets/images/solutions/tts.png' %}" alt="com" class="mx-auto rounded-[30px]">
+            </div>
+            <div class="max-w-[450px] mx-auto">
+                <p class="[&>span]:bg-custom tracking-[6px] text-xs uppercase [&>span]:h-3 z-10 [&>span]:w-[60px] [&>span]:inline-block [&>span]:absolute [&>span]:opacity-10 relative "><span></span>
+                    solutions
+                </p>
+                <h3 class="font-bold text-[40px] capitalize mt-6">Voix Captivante, Texte Transformé</h3>
+                <p class="text-muted mt-6">
+                    Convertissez vos mots en une expérience sonore immersive grâce à notre technologie de synthèse vocale. Créez des narrations bilingues dans plus de 40 langues, du haoussa au portugais. Votre texte prend vie ! 🎙️📖
+                    Notre solution de conversion de texte en audio rend vos contenus accessibles et captivants, même pour les publics peu lecteurs. Profitez de voix naturelles, d’un support multilingue incluant les langues africaines, et d’une intégration facile sur vos sites, applis ou podcasts.
+                    Avec <strong class="text-custom">Esacode</strong>, vos mots prennent vie dans une langue authentique pour mieux informer et fidéliser.
+                </p>
+                <div class="mt-10">
+                    <a href='{% url "front:documentation" %}'class="btn-custom rounded-full">Api Doc</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-[30px] mt-16">
+            <div class="max-w-[450px] mx-auto">
+                <p class="[&>span]:bg-custom tracking-[6px] text-xs uppercase [&>span]:h-3 z-10 [&>span]:w-[60px] [&>span]:inline-block [&>span]:absolute [&>span]:opacity-10 relative "><span></span>
+                    solutions
+                </p>
+                <h3 class="font-bold text-[40px] capitalize mt-6">
+                    Clonage Vocal Réaliste  
+                </h3>
+                <p class="text-muted mt-6">
+                    Reproduisez fidèlement une voix spécifique pour personnaliser vos projets audio.
+                    Laissez libre cours à votre créativité.  🎧🔊
+                    Notre solution de clonage de voix révolutionne la communication digitale en recréant des voix humaines fidèles pour vos services (téléphonie, assistants vocaux, etc.). Couplée à la traduction en langue africaine, elle permet de localiser vos messages tout en conservant une identité vocale cohérente. Idéal pour personnaliser votre relation client et engager vos audiences locales avec impact
+                </p>
+                <div class="mt-10">
+                    <a href='{% url "front:documentation" %}' class="btn-custom rounded-full">Api Docs</a>
+                </div>
+            </div>
+            <div>
+                <img src="{% static 'assets/images/solutions/clone_voice.png' %}"alt="com" class="mx-auto rounded-[30px]">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Conetent -->
+
+
+<section class="py-20" id="">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <div class="text-center">
+                <h2 class="font-bold text-[32px] md:text-[40px] capitalize mb-2 relative z-10"><span class="bg-[#dff1f0] h-[70px] w-[70px] inline-block absolute rounded-full -z-10 -top-[15px]"></span>Pourquoi choisir esacode pour vos besoins en traduction et technologies vocales ?</h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] items-center">
+            <div>
+                <img src="{% static 'assets/images/esacode-logo.png' %}" alt="" class="mx-auto img-fluid d-block">
+            </div>
+            <div class="mt-4">
+                <p class="text-muted mt-6 max-w-[500px] text-lg leading-[1.4] mb-0 justified-text">
+                    <strong class="text-custom">Esacode</strong> 
+                    ne se contente pas d’offrir des solutions technologiques.
+                     Nous proposons une approche complète et personnalisée, pensée pour renforcer votre communication, partout où votre entreprise veut grandir.
+                    <br class="text-custom"> <br> Nos atouts :
+                </p>
+                
+                <div class="mt-6 space-y-4">
+                    <div>
+                        <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                            <img src="{% static 'assets/images/featurestwo.png' %}" alt="" class="w-[26px] inline-block mx-auto">
+                        </div>
+                        <span class="inline-block ml-2 text-muted">Expertise en traduction en langue africaine et internationale</span>
+                    </div>
+                    <div>
+                        <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                            <img src="{% static 'assets/images/featurestwo.png' %}" alt="" class="w-[26px] inline-block mx-auto">
+                        </div>
+                        <span class="ml-2 text-muted">Technologies de pointe pour l’audio et la voix</span>
+                    </div>
+                    <div>
+                        <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                            <img src="{% static 'assets/images/featurestwo.png' %}" alt="" class="w-[26px] inline-block mx-auto">
+                        </div>
+                        <span class="ml-2 text-muted">Accompagnement personnalisé de la conception à l’implémentation</span>
+                    </div>
+                    <div>
+                        <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                            <img src="{% static 'assets/images/featurestwo.png' %}" alt="" class="w-[26px] inline-block mx-auto">
+                        </div>
+                        <span class="ml-2 text-muted">Engagement qualité et respect des délais</span>
+                    </div>
+                    <div>
+                        <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                            <img src="{% static 'assets/images/featurestwo.png' %}" alt="" class="w-[26px] inline-block mx-auto">
+                        </div>
+                        <span class="ml-2 text-muted">Adaptabilité totale à vos besoins métier</span>
+                    </div>
+                </div>
+                <p class="text-muted mt-6 max-w-[500px] text-lg leading-[1.4] mb-0 justified-text">
+                    Avec <strong class="text-custom">Esacode</strong> , <strong class="">vous n’achetez pas une simple solution : vous investissez dans la réussite de votre communication.</strong>
+                </p>
+                
+
+                
+            </div>
+            
+        </div>
+       
+    </div>
+</section>
+
+
+
+
+
+
+
+ <!-- Start Features -->
+ <section class="py-20">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <div class="text-center">
+                <h2 class="font-bold text-[32px] md:text-[40px] capitalize mb-2 relative z-10"><span class="bg-[#dff1f0] h-[70px] w-[70px] inline-block absolute rounded-full -z-10 -top-[15px]"></span>Ne perdez plus de temps !</h2>
+                <p class="text-muted mx-auto text-lg max-w-[600px] mt-6">
+                     Inscrivez-vous, sélectionnez un pack, explorez notre documentation et intégrez nos solutions en toute simplicité.” 🚀
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-16">
+            <div class="text-center py-12 px-4">
+                <div class="shadow-[10px_-10px_0_0_rgba(10,161,149,15%)] w-[56px] h-[56px] leading-[56px] text-center inline-block bg-custom rounded-md"><p class="text-white font-bold text-[28px]">1.</p></div>
+                <h4 class="mt-6 font-bold text-xl">Inscription Rapide </h4>
+                <p class="text-muted mt-4">Créez votre compte en quelques minutes pour explorer nos puissantes solutions.</p>
+                <div class="featres_btn mt-6">
+                    <a href="/#esacode_faq" class="text-muted">Apprendre plus <i class="mdi mdi-arrow-right text-custom text-xl relative top-[3px]"></i></a>
+                </div>
+            </div>
+            <div class="text-center py-12 px-4 rounded-[5px] border border-[#eaeaea]">
+                <div class="shadow-[10px_-10px_0_0_rgba(10,161,149,15%)] w-[56px] h-[56px] leading-[56px] text-center inline-block bg-custom rounded-md"><p class="text-white font-bold text-[28px]">2.</p></div>
+                <h4 class="mt-6 font-bold text-xl">Choix de Packs Adaptés</h4>
+                <p class="text-muted mt-4">
+                    Optez pour une solution adaptée, du démarrage rapide à l'échelle entreprise.
+                </p>
+                <div class="featres_btn mt-6">
+                    <a href="/#esacode_faq" class="text-muted">Apprendre plus <i class="mdi mdi-arrow-right text-custom text-xl relative top-[3px]"></i></a>
+                </div>
+            </div>
+            <div class="text-center py-12 px-4">
+                <div class="shadow-[10px_-10px_0_0_rgba(10,161,149,15%)] w-[56px] h-[56px] leading-[56px] text-center inline-block bg-custom rounded-md"><p class="text-white font-bold text-[28px]">3.</p></div>
+                <h4 class="mt-6 font-bold text-xl">
+                    Intégration Transparente
+                </h4>
+                <p class="text-muted mt-4">
+                    Suivez nos guides détaillés pour une intégration aisée dans votre projet.
+                </p>
+                <div class="featres_btn mt-6">
+                    <a href="/#esacode_faq" class="text-muted">Apprendre plus <i class="mdi mdi-arrow-right text-custom text-xl relative top-[3px]"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Features -->
+{% include 'includes/pack.html' %}
+      
+<section class="py-20" id="esacode_about">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <div class="text-center">
+                <h3 class="font-bold text-[28px] md:text-[32px] capitalize mb-2 relative z-10"><span class="bg-[#dff1f0] h-[70px] w-[70px] inline-block absolute rounded-full -z-10 -top-[15px]"></span>esacode, votre partenaire pour la traduction en langue africaine et l'innovation vocale</h3>
+            </div>
+             <p class="text-muted mx-auto text-lg max-w-[900px] mt-6">
+                Chez <strong class="text-custom">Esacode</strong> , nous unissons langues, voix et technologies pour dépasser les barrières linguistiques. Grâce à nos technologies vocales et notre expertise en traduction en langue africaine, nous vous aidons à communiquer de façon globale, humaine et authentique.
+                Vous avez une vision ? Nous avons la solution. Contactez-nous pour concrétiser votre projet.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+{% include 'includes/cta_contact.html' %}
+
+{% endblock %}

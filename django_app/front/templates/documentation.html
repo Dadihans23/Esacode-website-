@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}Documentation|Esacode{% endblock %}
+{% block header %}Documentation{% endblock %}
+
+{% block content %}
+    <!-- Start banner -->
+    <section class="md:pt-[170px] pt-[120px] pb-20 md:pb-[90px] bg-cover relative" style="background-image: url('{% static '/assets/images/bg-pages.jpg' %}')">
+        <div class="container">
+            <div class="grid grid-cols-1">
+                <h1 class="font-bold text-[36px]">Documentation</h1>
+                <p class="mt-2">Explorez notre documentation complète</p>
+                <div class="mt-4">
+                    <a class='btn-custom py-2 px-[15px]' href='/contact'>Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End banner -->
+
+    <!-- Start Documentation -->
+    <section class="py-20">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-[30px]">
+                <div class="lg:col-span-3">
+                    <div class="sticky top-[90px]">
+                        {% include 'doc_includes/nav.html' %}                        
+                    </div>
+                </div>
+
+                <section class="lg:col-span-9 space-y-5">
+
+                    <!-- Start Generic API Documentation Introduction -->                        
+                        {% include 'doc_includes/api_intro.html' %}                    
+                    <!-- End Generic API Documentation Introduction -->
+
+                    <!-- Start API Documentation for Language Detection -->
+                        {% include 'doc_includes/api_detection.html' %}                    
+                    <!-- End API Documentation for Language Detection -->
+                    
+                    <!-- Start API Documentation for Text Translation -->
+                         {% include 'doc_includes/api_translation.html' %}                    
+                    <!-- End API Documentation for Text Translation -->
+                    
+                    <!-- Start Start Language Codes Documentation -->
+                         {% include 'doc_includes/api_languages.html' %}                   
+                    <!-- End Start Language Codes Documentation -->
+
+                    <!-- Start API Documentation for Error Handling -->
+                         {% include 'doc_includes/api_errors.html' %}                   
+                    <!-- End API Documentation for Error Handling -->                  
+                    
+
+                </section>
+            </div>
+        </div>
+    </section>
+    <!-- End Documentation -->
+
+{% endblock %}

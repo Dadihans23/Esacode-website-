@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}Contact |Esacode{% endblock %}
+{% block header %}Contact|Esacode{% endblock %}
+
+{% block content %}
+
+ <!-- Start banner -->
+ <section class="md:pt-[170px] pt-[120px] pb-20 md:pb-[90px] bg-cover relative" style="background-image: url('{% static '/assets/images/bg-pages.jpg' %}')">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <h1 class="font-bold text-[36px]">Avez-vous un projet en tête ?</h1>
+            <p class="mt-2">Nous serions ravis de discuter de la manière dont nous pouvons vous aider.</p>
+            <div class="mt-4">
+                <a class='btn-custom py-2 px-[15px]' href='/contact#contact_form'>Contactez-nous</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End banner -->
+
+<!-- Start Contact -->
+<section class="py-20" id="contact_form">
+    <div class="container">
+        <!-- <div class="grid grid-cols-1">
+            <div class="max-w-[500px] w-full mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" class="form-input rounded-md !h-[55px] bg-white border !border-[#ced4da] focus:!border-custom" placeholder="Your name..." required="">
+                    </div>
+                    <div>
+                        <input type="text" class="form-input rounded-md !h-[55px] bg-white border !border-[#ced4da] focus:!border-custom" placeholder="Your email..." required="">
+                    </div>
+                    <div>
+                        <input type="email" class="form-input rounded-md !h-[55px] bg-white border !border-[#ced4da] focus:!border-custom" placeholder="Your subject..." required="">
+                    </div>
+                    <div>
+                        <textarea rows="5" class="form-input rounded-md bg-white border !border-[#ced4da] focus:!border-custom h-auto" placeholder="Your message..." required="" spellcheck="false"></textarea>
+                    </div>
+                    <div>
+                        <button type="button" class="btn-custom w-full">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+        <div class="bg-dark/[0.04] h-[1px] my-[70px] w-full inline-block"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+            <div class="text-center">
+                <div class="bg-custom/20 w-[50px] h-[50px] flex items-center mx-auto justify-center leading-[50px] rounded-lg">
+                    <img src="{% static 'assets/images/mail.png' %}" alt="mail" class="mx-auto inline-block h-[30px]">
+                </div>
+                <h4 class="mt-4 font-bold text-xl">Email</h4>
+                <p class="mt-2 text-muted">contact@esacode.org</p>
+            </div>
+            <!-- <div class="text-center">
+                <div class="bg-custom/20 w-[50px] h-[50px] flex items-center mx-auto justify-center leading-[50px] rounded-lg">
+                    <img src="{% static '/assets/images/icon/active-call.svg' %}" alt="mail" class="mx-auto inline-block h-[30px]">
+                </div>
+                <h4 class="mt-4 font-bold text-xl">Telephone</h4>
+                <p class="mt-2 text-muted">+(225)........</p>
+            </div> -->
+            <div class="text-center">
+                <div class="bg-custom/20 w-[50px] h-[50px] flex items-center mx-auto justify-center leading-[50px] rounded-lg">
+                    <img src="{% static 'assets/images/time.png' %}" alt="mail" class="mx-auto inline-block h-[30px]">
+                </div>
+                <h4 class="mt-4 font-bold text-xl">Support technique</h4>
+                <p class="mt-2 text-muted">Du lundi au Samedi</p>
+                <p class="mt-1 text-muted">8h00 à 22h00 (GMT)</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- End Contact -->
+
+
+  
+{% endblock %}

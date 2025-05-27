@@ -1,0 +1,100 @@
+{% load static %} 
+{% load static %} 
+<section class="relative py-20 bg-white pb-20">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1">
+            <div class="rounded-2xl py-[60px] px-[30px] bg-custom relative before:bg-no-repeat before:bg-cover before:absolute before:bg-[url('../images/counter_bg.png')] before:left-0 before:bottom-0 before:w-full before:h-[120px]">
+                <div class="relative text-center text-white">
+                    <h2 class="font-bold text-[32px] md:text-[40px] capitalize z-10">
+                        <span class="bg-white h-[70px] w-[70px] inline-block absolute rounded-full -z-10 -top-[15px]"></span>
+                        Ils nous font confiance
+                    </h2>
+                    <p class="mx-auto mt-6 max-w-[600px] text-lg">
+                        Découvrez quelques-unes des entreprises qui ont choisi Esacode pour leur transformation numérique.
+                    </p>
+                </div>
+                
+                <!-- Container flex pour le centrage global -->
+                <div class="flex justify-center">
+                    <!-- Grid container avec largeur max -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[50px] mb-12 max-w-6xl mx-auto">
+                        <!-- Clients existants -->
+                        <div class="flex justify-center items-center">
+                            <div class="p-4 text-center">
+                                <div class="bg-white rounded-lg p-3 shadow-sm h-22 w-28 flex items-center justify-center">
+                                    <img src="{% static 'assets/images/clients/mmas-ci.png' %}" alt="MMAS-CI" class="block object-contain w-28 h-20 grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                                <a href="{% url 'front:services' %}#esa_portfolio" class="text-white hover:text-gray-200 font-medium mt-3 text-sm inline-block">MMAS</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="p-4 text-center">
+                                <div class="bg-white rounded-lg p-3 shadow-sm h-22 w-28 flex items-center justify-center">
+                                    <img src="{% static 'assets/images/clients/vetoland.png' %}" alt="Vetoland" class="block object-contain w-28 h-20 grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                                <a href="{% url 'front:services' %}#esa_portfolio" class="text-white hover:text-gray-200 font-medium mt-3 text-sm inline-block">CABINET VETOLAND</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="p-4 text-center">
+                                <div class="bg-white rounded-lg p-3 shadow-sm h-22 w-28 flex items-center justify-center">
+                                    <img src="{% static 'assets/images/clients/pexcom.png' %}" alt="Pexcom" class="block object-contain w-28 h-20 grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                                <a href="{% url 'front:services' %}#esa_portfolio" class="text-white hover:text-gray-200 font-medium mt-3 text-sm inline-block">PEXCOM SARL</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="p-4 text-center">
+                                <div class="bg-white rounded-lg p-3 shadow-sm h-22 w-28 flex items-center justify-center">
+                                    <img src="{% static 'assets/images/clients/acs.png' %}" alt="ACS" class="block object-contain w-28 h-20 grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                                <a href="{% url 'front:services' %}#esa_portfolio" class="text-white hover:text-gray-200 font-medium mt-3 text-sm inline-block">ACS SARL</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="p-4 text-center">
+                                <div class="bg-white rounded-lg p-3 shadow-sm h-22 w-28 flex items-center justify-center">
+                                    <img src="{% static 'assets/images/clients/OUISSI-STONES-SA.png' %}" alt="OUISSI STONES" class="block object-contain w-28 h-20 grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                                <a href="{% url 'front:services' %}#esa_portfolio" class="text-white hover:text-gray-200 font-medium mt-3 text-sm inline-block">OUISSI STONES SA</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Ajout des nouveaux clients -->
+                        <div class="flex justify-center items-center">
+                            <div class="p-4 text-center">
+                                <div class="bg-white rounded-lg p-3 shadow-sm h-22 w-28 flex items-center justify-center">
+                                    <img src="{% static 'assets/images/clients/bme.png' %}" alt="BME" class="block object-contain w-28 h-20 grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                                <a href="{% url 'front:services' %}#esa_portfolio" class="text-white hover:text-gray-200 font-medium mt-3 text-sm inline-block">BME CONSULTING</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="p-4 text-center">
+                                <div class="bg-white rounded-lg p-3 shadow-sm h-22 w-28 flex items-center justify-center">
+                                    <img src="{% static 'assets/images/clients/flatcargo.png' %}" alt="Flatcargo" class="block object-contain w-28 h-20 grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                                <a href="{% url 'front:services' %}#esa_portfolio" class="text-white hover:text-gray-200 font-medium mt-3 text-sm inline-block">FLATCARGO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-center items-center">
+                            <div class="p-4 text-center">
+                                <div class="bg-white rounded-lg p-3 shadow-sm h-22 w-28 flex items-center justify-center">
+                                    <img src="{% static 'assets/images/clients/simplyon.png' %}" alt="Simply On" class="block object-contain w-28 h-20 grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                                <a href="{% url 'front:services' %}#esa_portfolio" class="text-white hover:text-gray-200 font-medium mt-3 text-sm inline-block">SIMPLY ON</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="{% url 'front:services' %}#esa_portfolio" class="mt-8 btn-custom rounded-full">
+                Voir nos réalisations
+                <i class="mdi mdi-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+            </a>
+        </div>
+    </div>
+</section>

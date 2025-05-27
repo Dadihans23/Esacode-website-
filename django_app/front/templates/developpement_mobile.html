@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block title %}Dévéloppement d'applications mobile  - Service  Esacode{% endblock %}
+{% block header %}Services - Esacode | Services numériques sur mesure pour entreprises et particuliers{% endblock %}
+
+{% block meta_description %}
+Votre communication digitale rentable pour entreprise avec Esacode : stratégie sur-mesure, web, mobile, design, ERP Odoo et solutions innovantes.
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+
+<!-- Start Web Development Section -->
+<!-- Start Mobile Development Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container">
+       
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-10">
+            <div>
+                <div>
+                    <img src="{% static '/assets/images/esacode-logo.png' %}" alt="Logo Esacode" class="mx-auto img-fluid d-block" style="width: 50%;">
+                </div>
+            </div>
+            <div class="justified-text">
+                <h3 class="font-bold text-[26px] mb-4">Développement mobile : votre application à portée de main</h3>
+                <p class="text-muted mb-4">
+                    Chez Esacode, nous concevons des applications mobiles <strong>modernes, performantes et intuitives</strong> pour répondre à vos besoins métier.
+                </p>
+                <p class="text-muted mb-4">
+                    Que vous souhaitiez créer une application <strong>Android</strong>, <strong>iOS</strong> ou <strong>multiplateforme</strong> avec Flutter, notre équipe vous accompagne de la définition du besoin jusqu’à la publication sur les stores.
+                </p>
+                <p class="text-muted">
+                    Nos applications sont pensées pour offrir une <strong>expérience utilisateur fluide</strong>, en parfaite adéquation avec votre image de marque.
+                </p>
+            </div>
+        </div>
+
+        <div class="justified-text mt-10 px-10">
+            <p class="text-muted mb-4">
+                De l’idée à la mise en ligne, nous assurons toutes les étapes : <strong>analyse des besoins</strong>, <strong>design UX/UI</strong>, <strong>développement</strong>, <strong>tests</strong> et <strong>déploiement</strong>.
+            </p>
+            <p class="text-muted mb-4">
+                Esacode crée des applications mobiles sur-mesure qui renforcent votre présence digitale, facilitent l’engagement de vos utilisateurs, et soutiennent vos objectifs commerciaux.
+            </p>
+
+            <!-- Points clés -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="App moderne" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Applications modernes, rapides et intuitives</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Multiplateforme" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Développement Android, iOS et multiplateforme</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="UX design" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Design UX/UI centré sur l’utilisateur</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-custom/[0.15] inline-block h-[42px] w-[42px] leading-[42px] text-center rounded-[6px]">
+                        <img src="{% static 'assets/images/featurestwo.png' %}" alt="Publication app" class="w-[26px] inline-block mx-auto">
+                    </div>
+                    <span class="ml-2 text-muted">Accompagnement jusqu’à la mise en ligne sur les stores</span>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-10 text-center">
+                <a href="{% url 'front:contact' %}" class="inline-block bg-custom text-white font-semibold px-8 py-3 rounded-[8px] shadow hover:bg-opacity-90 transition">
+                    Parlons de votre projet mobile
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% include 'includes/portfolio.html' %}
+
+{% include 'includes/cta_contact.html' %}
+{% endblock %}

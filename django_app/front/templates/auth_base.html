@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website">
+    <meta name="keywords" content="">
+    <meta name="author" content="Esacode">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="shortcut icon" href="{% static '/assets/images/favicon.ico' %}">
+
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/themify-icons.css' %}?v=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/materialdesignicons.min.css' %}?v=1.0">
+
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="{% static '/assets/css/swiper-bundle.min.css' %}?v=1.0">
+
+    <!-- Accordion Css-->
+    <link rel="stylesheet" href="{% static '/assets/css/accordion.min.css' %}?v=1.0">
+
+    <!-- Tobii Css -->
+    <link rel="stylesheet" href="{% static '/assets/css/tobii.min.css' %}?v=1.0">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}?v=1.0">
+    <link rel="stylesheet" href="{% static '/assets/css/esa_style.css' %}?v=1.0">
+
+</head>
+<body class="text-base antialiased font-nunito">
+    
+
+
+
+
+     <!-- Start Login -->
+     <section class="items-center flex bg-cover bg-center relative py-20 min-h-screen" style="background-image: url('{% static '/assets/images/login_bg.jpg' %}')">
+        <div class="bg-[#0d0f14]/25 absolute inset-0 backdrop-blur-md"></div>
+        <div class="container relative">
+            <div class="grid grid-cols-1">
+                <div class="max-w-[450px] mx-auto">
+                    <a href='/'>
+                        <img src="{% static '/assets/images/logo-light.png' %}" class="mx-auto h-10" alt="logo">
+                    </a>
+                </div>
+            </div>
+            {% block content %}{% endblock %}
+
+        </div>
+    </section>
+
+
+    
+
+    <!-- All Javascript -->
+    
+
+    <script src="{% static '/assets/js/translation.js' %}?v=1.2"></script>
+
+</body>
+</html>

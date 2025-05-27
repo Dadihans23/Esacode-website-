@@ -1,0 +1,346 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="{% block meta_description %}Esacode, votre partenaire incontournable dans la transformation numérique, propose une gamme complète de services pour accompagner aussi bien les entreprises que les particuliers.{% endblock %}">
+
+
+
+    {% comment %} <meta
+      name="description"
+      content="Esacode, votre partenaire incontournable dans la transformation numérique, propose une gamme complète de services pour accompagner aussi bien les entreprises que les particuliers."
+    /> {% endcomment %}
+    <meta
+      name="keywords"
+      content="Esacode, transformation numérique, communication vocale, détection de langue, traduction, conversion texte audio, clonage de voix, développement web, développement mobile, design, réseaux sociaux, sérigraphie"
+    />
+    <meta name="author" content="esacode.org" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="Esacode - Votre partenaire en transformation numérique"
+    />
+    <meta
+      property="og:description"
+      content="Esacode, votre partenaire incontournable dans la transformation numérique, propose une gamme complète de services pour accompagner aussi bien les entreprises que les particuliers."
+    />
+    <meta
+      property="og:image"
+      content="{% static '/assets/images/logo-dark.png' %}"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Esacode - Votre partenaire en transformation numérique"
+    />
+    <meta
+      name="twitter:description"
+      content="Esacode, votre partenaire incontournable dans la transformation numérique, propose une gamme complète de services pour accompagner aussi bien les entreprises que les particuliers."
+    />
+    <meta
+      name="twitter:image"
+      content="{% static '/assets/images/logo-dark.png' %}"
+    />
+
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link
+      rel="shortcut icon"
+      href="{% static '/assets/images/favicon.ico' %}"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static '/assets/css/themify-icons.css' %}?v=1.0"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static '/assets/css/materialdesignicons.min.css' %}?v=1.0"
+    />
+
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static '/assets/css/swiper-bundle.min.css' %}?v=1.0"
+    />
+
+    <!-- Accordion Css-->
+    <link
+      rel="stylesheet"
+      href="{% static '/assets/css/accordion.min.css' %}?v=1.0"
+    />
+
+    <!-- Tobii Css -->
+    <link
+      rel="stylesheet"
+      href="{% static '/assets/css/tobii.min.css' %}?v=1.0"
+    />
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}?v=1.0" />
+    <link
+      rel="stylesheet"
+      href="{% static '/assets/css/esa_style.css' %}?v=1.0"
+    />
+    
+  </head>
+  <body class="text-base antialiased font-nunito">
+    <!-- Start Header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed w-full horizontal-nav"
+      >
+        <div class="container">
+          <div class="flex items-center justify-between">
+            <a class="navbar-brand" href="/">
+              <img
+                src="{% static '/assets/images/logo-dark.png' %}"
+                class="mr-2 w-[130px]"
+                alt="logo"
+              />
+            </a>
+            <button class="navbar-toggler hidden text-end mobile-menu-button">
+              <span class="navbar-toggler-icon">
+                <i class="ti-menu icon-align-right"></i>
+              </span>
+            </button>
+            <div
+              class="navbar-collapse flex-1 mobile-menu hidden min-[991px]:block"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav justify-end horizontal-menu">
+                <li class="scroll">
+                  <a href="/"><span>Accueil</span></a>
+                </li>
+                <li class="scroll dropdown group/menu">
+                  <a href="javaScript:void();" class="dropdown-toggle"
+                    ><span>À propos</span></a
+                  >
+                  <ul class="dropdown-menu hidden group-hover/menu:block">
+                    <li><a href='{% url "front:about" %}'>À propos</a></li>
+                    <li>
+                      <a href='{% url "front:services" %}'>Nos Services</a>
+                    </li>
+                    <li>
+                      <a href='{% url "front:solutions" %}'>Nos Solutions</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'front:services' %}#esa_portfolio"
+                        >Nos Réalisations</a
+                      >
+                    </li>
+                    <li><a href="/#esacode_faq">FAQs</a></li>
+                    <li><a href='{% url "front:contact" %}'>Contact</a></li>
+                  </ul>
+                </li>
+                <li class="scroll dropdown group/menu">
+                  <a href="javaScript:void();" class="dropdown-toggle"
+                    ><span>Docs</span></a
+                  >
+                  <ul class="dropdown-menu hidden group-hover/menu:block">
+                    <li>
+                      <a href='{% url "front:documentation" %}'
+                        >Documentation</a
+                      >
+                    </li>
+                    <li>
+                      <a href='{% url "front:journal des modifications" %}'
+                        >Journal</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                {% if request.user.is_authenticated %}
+                <!-- Si l'utilisateur est connecté -->
+                <a href="{% url 'front:success' %}">
+                  <button class="btn btn-sm btn-custom navbar-btn btn-rounded">
+                    Dashboard
+                  </button>
+                </a>
+                {% else %}
+                <!-- Si l'utilisateur n'est pas connecté -->
+                <a href="{% url 'front:login' %}">
+                  <button class="btn btn-sm btn-custom navbar-btn btn-rounded">
+                    Connexion
+                  </button>
+                </a>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End header -->
+
+    <main id="content">{% block content %}{% endblock %}</main>
+
+    <!-- Start Footer -->
+    <footer class="bg-themedark pt-[60px] pb-[30px]">
+      <div class="container">
+        <div class="items-center grid md:grid-cols-2 grid-cols-1 gap-[30px]">
+          <div>
+            <img
+              src="{% static '/assets/images/logo-light.png' %}"
+              alt=""
+              class="h-[30px] mx-auto md:ml-0 rtl:mr-0"
+            />
+          </div>
+          <div>
+            <form
+              class="relative mx-auto md:mr-0 max-w-[380px] rtl:md:ml-0 rtl:mr-auto"
+            >
+              <input
+                type="text"
+                class="py-[14px] px-[15px] w-full text-sm outline-none pr-[150px] pl-5 rounded-[6px] text-white bg-white/[0.04] border border-white/[0.001]"
+                placeholder="Email"
+              />
+              <button
+                type="submit"
+                class="absolute tracking-[1px] font-normal text-[15px] rounded-[5px] capitalize top-1 right-1 outline-none text-sm py-[10px] px-[30px] bg-custom text-white border border-custom"
+              >
+                Subcribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="bg-white/[0.07] h-[1px] w-full my-10 mt-12"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] items-center">
+          <div>
+            <ul
+              class="flex md:flex-row flex-col gap-y-2.5 items-center text-center md:text-left"
+            >
+              <li
+                class="text-white hover:text-custom after:hidden duration-300 md:after:inline-block md:after:text-white md:after:mx-5 md:after:top-1 md:after:relative md:after:content-['*']"
+              >
+                <a href="{% url 'front:about' %}">À propos</a>
+              </li>
+              <li
+                class="text-white hover:text-custom after:hidden duration-300 md:after:inline-block md:after:text-white md:after:mx-5 md:after:top-1 md:after:relative md:after:content-['*']"
+              >
+                <a href="{% url 'front:services' %}">Services</a>
+              </li>
+              <li
+                class="text-white hover:text-custom after:hidden duration-300 md:after:inline-block md:after:text-white md:after:mx-5 md:after:top-1 md:after:relative md:after:content-['*']"
+              >
+                <a href="{% url 'front:solutions' %}">Solutions</a>
+              </li>
+              <li
+                class="text-white hover:text-custom after:hidden duration-300 md:after:inline-block md:after:text-white md:after:mx-5 md:after:top-1 md:after:relative md:after:content-['*']"
+              >
+                <a href="{% url 'front:services' %}#esa_portfolio"
+                  >Réalisations</a
+                >
+              </li>
+              <li class="text-white duration-300 hover:text-custom">
+                <a href='{% url "front:contact" %}'>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="flex items-center justify-center md:justify-end">
+              <li>
+                <a
+                  href="https://www.facebook.com/esacode/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white w-[38px] h-[38px] leading-[38px] mx-1.5 hover:text-custom duration-300 hover:-translate-y-1 rounded-full block bg-white/5 text-lg text-center"
+                  ><i class="mdi mdi-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/esacode01"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white w-[38px] h-[38px] leading-[38px] mx-1.5 hover:text-custom duration-300 hover:-translate-y-1 rounded-full block bg-white/5 text-lg text-center"
+                  ><i class="mdi mdi-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/esacode01/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white w-[38px] h-[38px] leading-[38px] mx-1.5 hover:text-custom duration-300 hover:-translate-y-1 rounded-full block bg-white/5 text-lg text-center"
+                  ><i class="mdi mdi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/esacode/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white w-[38px] h-[38px] leading-[38px] mx-1.5 hover:text-custom duration-300 hover:-translate-y-1 rounded-full block bg-white/5 text-lg text-center"
+                  ><i class="mdi mdi-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@esacode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white w-[38px] h-[38px] leading-[38px] mx-1.5 hover:text-custom duration-300 hover:-translate-y-1 rounded-full block bg-white/5 text-lg text-center"
+                  ><i class="mdi mdi-music-note"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@esacode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white w-[38px] h-[38px] leading-[38px] mx-1.5 hover:text-custom duration-300 hover:-translate-y-1 rounded-full block bg-white/5 text-lg text-center"
+                  ><i class="mdi mdi-youtube-play"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 mt-4">
+          <div class="col-lg-12">
+            <div class="text-center mt-4 bg-white/[0.03] py-3.5 px-3 rounded">
+              <p class="text-white">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Esacode. |
+                <a
+                  href="{% url 'front:mentions_legales' %}"
+                  class="custom-bullet"
+                  >Mentions légales</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- All Javascript -->
+    <!-- Accordion Js -->
+    <script src="{% static '/assets/js/accordion.min.js' %}?v=1.0"></script>
+
+    <!-- Swiper Js -->
+    <script src="{% static '/assets/js/swiper-bundle.min.js' %}?v=1.0"></script>
+
+    <!-- Tobii Js -->
+    <script src="{% static '/assets/js/tobii.min.js' %}?v=1.0"></script>
+
+    <!-- Custom Js -->
+    <script src="{% static '/assets/js/custom.js' %}?v=1.0"></script>
+
+    <!-- Vos autres scripts JavaScript  ici... -->
+
+    <script src="{% static '/assets/js/accordion.js' %}?v=1.0"></script>
+  </body>
+</html>

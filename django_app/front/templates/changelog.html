@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}Mise à jour | Esacode{% endblock %}
+{% block header %}Mise à jour | Esacode{% endblock %}
+
+{% block content %}
+<!-- Start banner -->
+<section class="md:pt-[170px] pt-[120px] pb-20 md:pb-[90px] bg-cover relative" style="background-image: url('{% static '/assets/images/bg-pages.jpg' %}')">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <h1 class="font-bold text-[36px]">Mise à jour</h1>
+            <p class="mt-2 text-gray-600">Nouveautés de la dernière version</p>
+        </div>
+    </div>
+</section>
+<!-- End banner -->
+
+<!-- Start Changelog -->
+<!-- Start Changelog -->
+<section class="py-20">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <div class="border-2 border-[#f6f6f6] py-[50px] px-10 space-y-8">
+
+                <!-- Version 1.4.0 -->
+                <div>
+                    <h4 class="font-bold text-2xl"><span class="text-custom">1.4.0</span> - 16 décembre 2024</h4>
+                    <h5 class="mt-6 text-xl font-bold">Extension linguistique</h5>
+                    <p class="text-gray-600 mt-1">
+                        <span class="bg-blue-600 h-2 w-2 mr-2 rounded-full inline-block"></span>
+                        Ajout des langues africaines sur les API :
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Ouganda, Soudan du Sud : Acholi (ach)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Ouganda, République démocratique du Congo : Alur (alz)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Éthiopie : Amharique (am)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Mali : Bambara (bm)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Malawi, Zambie, Mozambique : Chichewa (ny)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Côte d’Ivoire, Burkina Faso, Mali : Dioula (dyu)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Togo, Ghana : Ewe (ee)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Nigeria, Niger, Tchad, Cameroun : Kanuri (kr)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>République démocratique du Congo, Congo-Brazzaville, Angola : Kikongo (kg)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Rwanda : Kinyarwanda (rw)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>République démocratique du Congo, Congo-Brazzaville : Kituba (ktu)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Sierra Leone : Krio (kri)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>République démocratique du Congo, Congo-Brazzaville : Lingala (ln)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Ouganda : Luganda (lg)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Soudan du Sud, Éthiopie : Nuer (nus)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Éthiopie, Kenya : Oromo (om)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Afrique de l’Ouest et du Centre : Peul (ff)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>République centrafricaine : Sango (sg)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Lesotho, Afrique du Sud : Sesotho (st)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Zimbabwe : Shona (sn)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Kenya, Tanzanie, Ouganda, etc. : Swahili (sw)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Afrique du Nord : Tamazight (Berbère, alphabet latin) (ber-Latn)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Afrique du Nord : Tamazight (Berbère, Tifinagh) (ber)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Érythrée, Éthiopie : Tigrigna (ti)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Mozambique, Afrique du Sud : Tsonga (ts)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Botswana, Afrique du Sud : Tswana (tn)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Afrique du Sud, Zimbabwe : Venda (ve)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Afrique du Sud : Xhosa (xh)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Afrique du Sud : Zoulou (zu)
+                    </p>
+                </div>
+                
+
+                <!-- Version 1.3.0 -->
+                <div>
+                    <h4 class="font-bold text-2xl"><span class="text-custom">1.3.0</span> - 03 décembre 2024</h4>
+                    <h5 class="mt-6 text-xl font-bold">Extension linguistique</h5>
+                    <p class="text-gray-600 mt-1">
+                        <span class="bg-blue-600 h-2 w-2 mr-2 rounded-full inline-block"></span>
+                        Ajout des langues africaines sur les API :
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Mali : Nko (bm-Nkoo)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Somalie : Somali (so)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Sierra Leone : Soso ou Soussou (sus)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Eswatini : Swati (ss)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Burundi : Kirundi ou Rundi (run)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Nigeria : Tiv (tiv)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Malawi : Tumbuka (tum)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Ghana : Ga (gaa)
+                    </p>
+                </div>
+
+                <!-- Version 1.2.0 -->
+                <div>
+                    <h4 class="font-bold text-2xl"><span class="text-custom">1.2.0</span> - 23 novembre 2024</h4>
+                    <h5 class="mt-6 text-xl font-bold">Traductions africaines</h5>
+                    <p class="text-gray-600 mt-1">
+                        <span class="bg-blue-600 h-2 w-2 mr-2 rounded-full inline-block"></span>
+                        Déploiement des langues africaines sur les API :
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Bénin : Fon (fon)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Sénégal : Wolof (wo)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Éthiopie : Afar (aa)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Côte d'Ivoire : Baoulé (bci)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Zambie : Bemba (bem)
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Tanzanie : Luo (luo)
+                    </p>
+                </div>
+
+                <!-- Version 1.1.0 -->
+                <div>
+                    <h4 class="font-bold text-2xl"><span class="text-custom">1.1.0</span> - 10 juillet 2024</h4>
+                    <h5 class="mt-6 text-xl font-bold">Déploiement API</h5>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Déploiement des API système pour la gestion des traductions multilingues.
+                    </p>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>🌍 Traductions multilingues pour une portée mondiale, couvrant plus d'une quarantaine de langues, avec une priorité donnée aux langues africaines (Yoruba, Igbo et Haoussa disponibles).
+                    </p>
+                </div>
+
+                <!-- Version 1.0.0 -->
+                <div>
+                    <h4 class="font-bold text-2xl"><span class="text-custom">1.0.0</span> - 24 avril 2024</h4>
+                    <h5 class="mt-6 text-xl font-bold">Première diffusion</h5>
+                    <p class="text-muted mt-1">
+                        <span class="bg-custom h-2 w-2 mr-2 rounded-full inline-block"></span>Première version du projet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- End Changelog -->
+
+{% endblock %}
